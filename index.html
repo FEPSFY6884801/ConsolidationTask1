@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html>
+  <head> Change colour of button</head>
+  <body>
+    <button id="colorButton">Click me</button>
+    <script>
+      var button = document.getElementbyId("colorButton");
+      function changeColor(){
+        var randomColor="#" + Math.floor(Math.random()*16777215).toString(16);
+        button.style.backgroundColor = randomColor;
+      }
+      button.addEventListener("clcik",changeColor);
+      
+    </script>
+  </body>
+</html>
